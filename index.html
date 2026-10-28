@@ -3,106 +3,380 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#100611">
-<meta name="description" content="ASUPAN LENDIR — galeri fashion dewasa dengan gaya glamor dan neon.">
-<title>ASUPAN LENDIR | Official</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#120512">
+<meta name="description" content="ASUPAN LENDIR — summer fashion, bikini editorial, beach glamour dan tropical vibes.">
+<title>ASUPAN LENDIR | Hot Summer</title>
+
 <style>
-:root{--pink:#ff1685;--purple:#a855f7;--bg:#100611;--panel:#1b1020;--muted:#c4b5c9}
+:root{
+  --pink:#ff1685;
+  --purple:#a855f7;
+  --bg:#100611;
+  --panel:#211020;
+  --muted:#d2bfd2;
+}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:white;font-family:Arial,sans-serif}
-header{display:flex;justify-content:space-between;align-items:center;padding:20px 7%;border-bottom:1px solid #ffffff15;background:#100611eF;position:sticky;top:0;z-index:5;backdrop-filter:blur(12px)}
-.logo{font-size:22px;font-weight:900;letter-spacing:1px}.logo span{color:var(--pink)}
-nav{display:flex;gap:22px}nav a{color:white;text-decoration:none;font-size:14px}
-a:hover{color:var(--pink)}
-.hero{min-height:570px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;padding:65px 8%;background:radial-gradient(ellipse at 75% 30%,#70174766,transparent 50%)}
-.tag{color:#ff69b4;text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:bold}
-h1{font-size:clamp(43px,6vw,76px);line-height:.98;margin:18px 0}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:white;
+  font-family:Arial,Helvetica,sans-serif;
+}
+a{color:inherit;text-decoration:none}
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 7%;
+  border-bottom:1px solid #ffffff19;
+  background:#100611ee;
+  position:sticky;
+  top:0;
+  z-index:10;
+  backdrop-filter:blur(14px);
+}
+.logo{font-size:22px;font-weight:900;letter-spacing:1px}
+.logo span{color:var(--pink)}
+nav{display:flex;gap:24px}
+nav a{font-size:14px;color:#eee;transition:.2s}
+nav a:hover{color:var(--pink)}
+.hero{
+  min-height:650px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:45px;
+  padding:65px 8%;
+  background:
+    radial-gradient(ellipse at 80% 20%,#9d174d66,transparent 48%),
+    radial-gradient(ellipse at 15% 80%,#701a7c55,transparent 45%);
+}
+.tag{
+  color:#ff6db6;
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+h1{
+  font-size:clamp(48px,6vw,82px);
+  line-height:.98;
+  margin:22px 0;
+  letter-spacing:-3px;
+}
 h1 span{color:var(--pink)}
-.intro{color:var(--muted);line-height:1.8;max-width:490px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
-.btn{padding:14px 22px;border-radius:10px;text-decoration:none;font-weight:bold;display:inline-block;border:1px solid #ffffff2b;color:white;cursor:pointer;background:transparent}
-.primary{background:var(--pink);border-color:var(--pink);color:white}
-.visual{min-height:380px;border-radius:25px;border:1px solid #ff168555;overflow:hidden;position:relative;background:linear-gradient(0deg,#100611 0%,transparent 65%),url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=85') center 35%/cover}
-.visual-label{position:absolute;bottom:25px;left:25px;right:20px}
-.visual-label h2{font-size:30px;margin:8px 0}
-section.content{padding:60px 8%}
-.section-title{text-align:center;font-size:32px;margin:0 0 12px}
-.section-sub{text-align:center;color:var(--muted);margin:0 auto 32px;line-height:1.7}
-.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.card{border:1px solid #ffffff16;border-radius:16px;overflow:hidden;background:var(--panel)}
-.card img{width:100%;height:220px;object-fit:cover;display:block}
-.card div{padding:20px}.card p{color:var(--muted);font-size:14px;line-height:1.7}
-.pill{font-size:11px;color:#ff8ac3;background:#ff16851b;padding:7px 10px;border-radius:30px}
-.about{background:#1a0d1d;text-align:center}
-footer{border-top:1px solid #ffffff15;padding:25px 8%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#a99aaa;font-size:13px}
-@media(max-width:760px){header{padding:17px 5%}nav{gap:12px}nav a{font-size:12px}.hero{grid-template-columns:1fr;padding:45px 6%;gap:28px}.visual{min-height:350px}.cards{grid-template-columns:1fr}.card img{height:270px}section.content{padding:48px 6%}footer{padding:22px 6%}}
+.intro{
+  color:var(--muted);
+  line-height:1.9;
+  max-width:480px;
+  font-size:16px;
+}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+.btn{
+  display:inline-block;
+  padding:14px 22px;
+  border:1px solid #ffffff35;
+  border-radius:9px;
+  color:white;
+  font-weight:bold;
+  transition:.2s;
+}
+.btn:hover{transform:translateY(-3px);border-color:var(--pink)}
+.primary{
+  background:linear-gradient(100deg,var(--pink),#d946ef);
+  border-color:transparent;
+}
+.hero-photo{
+  min-height:500px;
+  border-radius:22px;
+  overflow:hidden;
+  position:relative;
+  border:1px solid #ff168566;
+  background:
+    linear-gradient(0deg,#130614 0%,transparent 60%),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85')
+    center/cover;
+  box-shadow:0 20px 80px #ff168522;
+}
+.photo-caption{
+  position:absolute;
+  bottom:25px;
+  left:25px;
+  right:25px;
+}
+.photo-caption h2{font-size:32px;margin:12px 0}
+.pill{
+  display:inline-block;
+  padding:8px 12px;
+  border-radius:30px;
+  background:#ff16852b;
+  border:1px solid #ff168566;
+  color:#ff9dce;
+  font-size:11px;
+  letter-spacing:1px;
+}
+.stats{
+  display:flex;
+  gap:25px;
+  flex-wrap:wrap;
+  margin-top:35px;
+}
+.stat strong{display:block;font-size:20px;color:var(--pink)}
+.stat small{color:var(--muted)}
+.section{padding:75px 8%}
+.section-heading{text-align:center;margin-bottom:40px}
+.section-heading h2{font-size:36px;margin:15px 0}
+.section-heading p{color:var(--muted);line-height:1.8}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:22px;
+}
+.card{
+  background:var(--panel);
+  border:1px solid #ffffff18;
+  border-radius:16px;
+  overflow:hidden;
+  transition:.3s;
+}
+.card:hover{
+  transform:translateY(-6px);
+  border-color:#ff168588;
+  box-shadow:0 15px 40px #ff168518;
+}
+.card img{
+  display:block;
+  width:100%;
+  height:310px;
+  object-fit:cover;
+  background:#29152a;
+}
+.card-content{padding:22px}
+.card h3{margin:14px 0 9px}
+.card p{font-size:14px;color:var(--muted);line-height:1.8}
+.collection{
+  text-align:center;
+  background:linear-gradient(130deg,#34102e,#17101f,#3b1035);
+  border-top:1px solid #ff168533;
+  border-bottom:1px solid #ff168533;
+}
+.collection h2{font-size:clamp(30px,5vw,52px);margin:18px 0}
+.collection p{
+  color:var(--muted);
+  max-width:620px;
+  margin:0 auto 25px;
+  line-height:1.9;
+}
+.about{text-align:center}
+.about p{
+  max-width:680px;
+  margin:20px auto;
+  color:var(--muted);
+  line-height:1.9;
+}
+footer{
+  padding:25px 8%;
+  border-top:1px solid #ffffff18;
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  flex-wrap:wrap;
+  color:#bba9bd;
+  font-size:13px;
+}
+footer span:last-child{color:#ff80bf}
+@media(max-width:800px){
+  header{padding:17px 5%}
+  nav{gap:12px}
+  nav a{font-size:12px}
+  .hero{grid-template-columns:1fr;padding:45px 6%;gap:30px}
+  .hero-photo{min-height:390px}
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .card img{height:240px}
+  .section{padding:55px 6%}
+}
+@media(max-width:520px){
+  .logo{font-size:17px}
+  nav{gap:10px}
+  nav a{font-size:11px}
+  h1{font-size:51px}
+  .gallery{grid-template-columns:1fr}
+  .card img{height:330px}
+  .stats{gap:18px}
+  .hero-photo{min-height:360px}
+  .section-heading h2{font-size:29px}
+}
 </style>
 </head>
+
 <body>
+
 <header>
-  <div class="logo">ASUPAN <span>LENDIR ♥</span></div>
+  <a class="logo" href="#home">ASUPAN <span>LENDIR ♥</span></a>
   <nav>
-    <a href="#beranda">Beranda</a>
-    <a href="#galeri">Galeri</a>
-    <a href="#tentang">Tentang</a>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#summer">Summer</a>
+    <a href="#about">About</a>
   </nav>
 </header>
 
 <main>
-<section class="hero" id="beranda">
+<section class="hero" id="home">
   <div>
-    <div class="tag">♥ Glamour · Fashion · Confidence</div>
-    <h1>YOUR NIGHT.<br>YOUR <span>STYLE.</span></h1>
-    <p class="intro">Selamat datang di ASUPAN LENDIR — ruang visual bertema fashion dewasa, gaya glamor, dan inspirasi penampilan dengan sentuhan neon pink.</p>
+    <div class="tag">☀ Tropical Summer Collection</div>
+
+    <h1>HOT<br>SUMMER<br><span>VIBES.</span></h1>
+
+    <p class="intro">
+      Selamat datang di ASUPAN LENDIR.
+      Nikmati inspirasi beachwear, bikini fashion,
+      tropical lifestyle, dan summer glamour
+      dalam satu galeri penuh warna.
+    </p>
+
     <div class="actions">
-      <a class="btn primary" href="#galeri">Jelajahi Galeri ↗</a>
-      <a class="btn" href="#tentang">Tentang Kami</a>
+      <a class="btn primary" href="#gallery">JELAJAHI GALERI ↗</a>
+      <a class="btn" href="#summer">SUMMER COLLECTION</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <strong>01</strong>
+        <small>Summer Style</small>
+      </div>
+      <div class="stat">
+        <strong>02</strong>
+        <small>Beach Fashion</small>
+      </div>
+      <div class="stat">
+        <strong>03</strong>
+        <small>Glamour Vibes</small>
+      </div>
     </div>
   </div>
-  <div class="visual" role="img" aria-label="Potret fashion glamor">
-    <div class="visual-label">
-      <span class="pill">FEATURED LOOK</span>
-      <h2>Bold. Beautiful. Unforgettable.</h2>
-      <p>Fashion adalah ekspresi diri.</p>
+
+  <div class="hero-photo" role="img"
+       aria-label="Pemandangan pantai tropis">
+    <div class="photo-caption">
+      <span class="pill">HOT SUMMER EDITION</span>
+      <h2>Sun. Sea. Confidence.</h2>
+      <p>Own your summer. Own your style. ♥</p>
     </div>
   </div>
 </section>
 
-<section class="content" id="galeri">
-  <div class="tag" style="text-align:center">THE COLLECTION</div>
-  <h2 class="section-title">Galeri Pilihan</h2>
-  <p class="section-sub">Inspirasi gaya, kecantikan, dan fashion editorial.</p>
-  <div class="cards">
+<section class="section" id="gallery">
+  <div class="section-heading">
+    <div class="tag">The Visual Collection</div>
+    <h2>Summer <span style="color:var(--pink)">Gallery</span></h2>
+    <p>Inspirasi fashion pantai, gaya resort, dan editorial musim panas.</p>
+  </div>
+
+  <div class="gallery">
     <article class="card">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80" alt="Potret model fashion">
-      <div><span class="pill">PORTRAIT</span><h3>Beauty & Confidence</h3><p>Potret elegan dengan karakter yang kuat.</p></div>
+      <img loading="lazy"
+        src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=85"
+        alt="Inspirasi model fashion dewasa">
+      <div class="card-content">
+        <span class="pill">FASHION</span>
+        <h3>Summer Icon</h3>
+        <p>Inspirasi penampilan modern dengan karakter yang berani.</p>
+      </div>
     </article>
+
     <article class="card">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80" alt="Editorial busana modern">
-      <div><span class="pill">EDITORIAL</span><h3>Modern Glamour</h3><p>Inspirasi outfit modern dan penuh percaya diri.</p></div>
+      <img loading="lazy"
+        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=85"
+        alt="Pantai tropis dengan laut biru">
+      <div class="card-content">
+        <span class="pill">BEACH LIFE</span>
+        <h3>Tropical Paradise</h3>
+        <p>Suasana pantai eksotis untuk inspirasi liburan musim panas.</p>
+      </div>
     </article>
+
     <article class="card">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80" alt="Inspirasi gaya fashion">
-      <div><span class="pill">STYLE</span><h3>Night Out</h3><p>Referensi gaya untuk suasana malam yang istimewa.</p></div>
+      <img loading="lazy"
+        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=85"
+        alt="Potret editorial model dewasa">
+      <div class="card-content">
+        <span class="pill">BEAUTY</span>
+        <h3>Beauty & Confidence</h3>
+        <p>Potret kecantikan dengan sentuhan editorial yang elegan.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img loading="lazy"
+        src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=85"
+        alt="Editorial gaya busana">
+      <div class="card-content">
+        <span class="pill">EDITORIAL</span>
+        <h3>Bold & Beautiful</h3>
+        <p>Gaya fashion kontemporer untuk tampil percaya diri.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img loading="lazy"
+        src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=800&q=85"
+        alt="Pemandangan laut dan pantai">
+      <div class="card-content">
+        <span class="pill">OCEAN</span>
+        <h3>Ocean Escape</h3>
+        <p>Nuansa laut biru, sinar matahari, dan suasana tropis.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img loading="lazy"
+        src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=85"
+        alt="Pilihan outfit fashion">
+      <div class="card-content">
+        <span class="pill">STYLE</span>
+        <h3>Resort Look</h3>
+        <p>Inspirasi busana liburan dengan gaya santai dan glamor.</p>
+      </div>
     </article>
   </div>
 </section>
 
-<section class="content about" id="tentang">
-  <div class="tag">ABOUT THE BRAND</div>
-  <h2 class="section-title">Tampil Berani. Tetap Elegan.</h2>
-  <p class="section-sub">ASUPAN LENDIR adalah konsep galeri fashion dan kecantikan bernuansa gelap, glamor, dan modern.</p>
-  <a href="#beranda" class="btn primary">Kembali ke Atas ↑</a>
+<section class="section collection" id="summer">
+  <div class="tag">Feel the heat</div>
+  <h2>MAKE EVERY SUMMER<br><span style="color:var(--pink)">UNFORGETTABLE.</span></h2>
+  <p>
+    Jelajahi inspirasi beachwear dan swimwear fashion
+    dengan model dewasa, gaya editorial, warna tropis,
+    dan suasana liburan yang penuh energi.
+  </p>
+  <a class="btn primary" href="#gallery">EXPLORE COLLECTION ♥</a>
+</section>
+
+<section class="section about" id="about">
+  <div class="tag">About the Brand</div>
+  <h2>ASUPAN <span style="color:var(--pink)">LENDIR</span></h2>
+  <p>
+    Sebuah konsep galeri digital bertema summer fashion,
+    beach lifestyle, dan glamour editorial.
+    Mengutamakan visual yang menarik, tampilan responsif,
+    dan pengalaman menjelajah yang nyaman.
+  </p>
+  <a class="btn" href="#home">↑ KEMBALI KE ATAS</a>
 </section>
 </main>
 
 <footer>
   <span>© <span id="year"></span> ASUPAN LENDIR</span>
-  <span>Fashion · Glamour · Confidence</span>
+  <span>♥ Summer Fashion · Beach · Glamour</span>
 </footer>
+
 <script>
-document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById("year").textContent =
+  new Date().getFullYear();
 </script>
+
 </body>
 </html>
